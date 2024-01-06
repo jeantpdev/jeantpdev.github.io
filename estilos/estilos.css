@@ -177,10 +177,9 @@ body {
 .contenedor-experiencia .contenido-tarjetas {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     row-gap: 5vh;
     column-gap: 2vw;
-
 }
 
 
@@ -193,10 +192,12 @@ body {
     grid-template-columns: auto 1fr;
     padding: 5vh 2vw;
     column-gap: 2vw;
+    row-gap: 2vh;
     color: var(--grisClaro);
-    /*background-color: #ffffff;*/
     border-radius: 0.5vw;
-    height: 40vh;
+    /* height: 40vh; */
+    width: 50vw;
+    line-height: 1.6;
 }
 
 .tarjeta-experiencia .imagen {
