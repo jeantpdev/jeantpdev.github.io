@@ -23,7 +23,7 @@
 }
 
 body {
-    background-color: var(--blanco);
+    background-color: var(--negroClaro);
 }
 
 
@@ -77,7 +77,7 @@ body {
 }
 
 .hero {
-    padding: 0 5vw;
+    padding: 0 20vw;
 }
 
 .contenido-informacion {
@@ -86,7 +86,7 @@ body {
 
 .contenido-informacion .contenido {
     display: grid;
-    padding: 25vh 10vw;
+    margin: 20% 0;
     column-gap: 2vw;
     grid-template-areas:
         "foto textos"
@@ -184,6 +184,8 @@ body {
     align-items: flex-start;
     row-gap: 5vh;
     column-gap: 2vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 .contenedor-experiencia .contenido-tarjetas .tarjeta-experiencia {
@@ -274,18 +276,14 @@ body {
 }
 
 .proyectos-grilla {
-    display: grid;
-    grid-template-areas: "titulo proyectos";
-    grid-template-columns: 0.5fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .proyectos-grilla .titulo-proyectos {
     display: flex;
-    grid-area: titulo;
     flex-direction: column;
 }
-
-
 
 .proyectos-grilla .titulo-proyectos .titulo h1 {
     font-size: var(--tamanoTitulos);
@@ -293,7 +291,6 @@ body {
 }
 
 .proyectos-grilla .tarjetas {
-    grid-area: proyectos;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
